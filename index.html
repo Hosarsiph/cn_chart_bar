@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Capital Natural</title>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+
+
+<!-- Load Leaflet from CDN -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
+  <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+  <link rel="stylesheet" href="css/cn.css">
+
+</head>
+<body>
+  <header style="background-color:rgb(30, 29, 29);">
+    <div class="container">
+      <h2 align="center" style="color: rgb(173, 187, 200);">Porcentajes de Capital Natural por municipio en la Región ADESUR</h2>
+    </div>
+  </header>
+
+   <div class="container-fluid" id='map'></div>
+
+  <div class="wrapper">
+        <span id="play" class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-play fa-stack-1x" id="play-pause"></i>
+        </span>
+       <div id="slider"></div>
+      <!-- <span id="position">Pro_CN_T1</span></h2> -->
+      <span id="play" class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-play fa-stack-1x" id="play-pause"></i>
+        </span>
+  </div>
+
+    <div id="bar"></div>
+
+    <!-- <svg id="visualisation"></svg> -->
+
+  <div id="basemaps-wrapper" class="leaflet-bar">
+    <select name="basemaps" id="basemaps">
+      <option value="ShadedRelief">Relieve<options>
+      <option value="Topographic">Topográfico<options>
+      <option value="Streets">Carreteras</option>
+      <option value="NationalGeographic">National Geographic<options>
+      <option value="Oceans">Oceanos<options>
+      <option value="Gray">Gris<options>
+      <option value="DarkGray">Gris obscuro<options>
+      <option value="Imagery">Imagen Satélite<options>
+    </select>
+  </div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src='data/CN.json'></script>
+<script src='js/d3.slider.js'></script>
+<link href='css/d3.slider.css' rel='stylesheet' />
+<script src="js/radarchart.js"></script>
+<script src='js/cn_res.js'></script>
+
+</body>
+</html>

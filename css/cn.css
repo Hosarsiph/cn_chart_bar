@@ -1,0 +1,164 @@
+#map {
+ position:absolute;
+ top:60px;
+ bottom:0;
+ height: 95%;
+ width: 100%;
+}
+
+/*############################### [INFO] ################################*/
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.legend {
+    text-align: left;
+    line-height: 20px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+
+.leaflet-popup-close-button {
+display: none;
+}
+.leaflet-popup-content-wrapper {
+pointer-events: none;
+}
+
+.leaflet-control-command-interior
+{
+    background-image: url(../img/chart-delete.png);
+    width: 26px;
+    height: 26px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+    cursor: auto;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #FFFFFF;
+}
+
+    .leaflet-control-command-interior:hover
+{
+    background-color: #F4F4F4;
+}
+
+/*############################### [SLIDER] ################################*/
+.wrapper {
+position: absolute;
+width: 400px;
+
+top: 92%;
+left: 1px;
+z-index: 10;
+opacity: 0.8;
+padding: 10px;
+  }
+
+/*.wrapper > div {
+margin: 35px 0;
+}*/
+
+/*############################### [LIST] ################################*/
+#basemaps-wrapper {
+ position: absolute;
+ top: 71px;
+ height: 36px;
+ right: 50px;
+ z-index: 10;
+ opacity: 0.8;
+ background: white;
+ padding: 10px;
+}
+#basemaps {
+ margin-bottom: 5px;
+}
+
+/*############################### [RADAR CHART] ################################*/
+#bar {
+    position: absolute;
+    top: 54%;
+    left: 14px;
+    width: 420px;
+    height: 350px;
+    opacity: 0.7;
+    border-radius: 5px;
+      }
+
+.bar:hover {
+    fill: orange;
+      }
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+    }
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+
+.axis path, .axis line  {
+       fill: none;
+       stroke: #777;
+       shape-rendering: crispEdges;
+       }
+
+.axis text {
+       font-family: 'Arial';
+       font-size: 13px;
+       }
+
+.tick {
+    stroke-dasharray: 1, 2;
+    }
+
+.bar {
+  fill: FireBrick;
+     }
+/*############################### [BUTTON] ################################*/
+
+#play {
+    cursor: pointer;
+    bottom: 5px;
+    left: 7px;
+    color: #333333;
+  }
